@@ -13,31 +13,120 @@
 		<header>
 			<div class="container-fluid">
 				<a href="https://www.fri.uni-lj.si/">
-					<img src="images/fri_logo.jpg" alt="Fakulteta za računalništvo in informatiko" align="top">
+					<img src="images/fri_logo.jpg" alt="Fakulteta za računalništvo in informatiko">
 				</a>
 				<div class="page-header">
-					<h2>E-učilnica<br><small>Fakulteta za rčunalništvo in informatiko</small></h2>
+					<h2>Spletna učilnica<br><small>Fakulteta za rčunalništvo in informatiko</small></h2>
 				</div>
 			</div>
 		</header>
-		<a href="./test.html">test</a>
 		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 bar">
 			<nav class="navbar navbar-default">
 				<div class="container-fluid" id="kon">
-					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-						<div id="s" onclick="spremeni('a1',this)"><span></span></div>
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+						<a href="./index.html">
+							<div class="s"><span>Domov</span></div>
+						</a>
 					</div>
-					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-						<div id="s" onclick="spremeni('a2',this)"><span></span></div>
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+						<a href="./index.html">
+							<div class="s"><span>Predmeti</span></div>
+						</a>
 					</div>
-					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-						<div id="s" onclick="spremeni('a3',this)"><span></span></div>
-					</div>
-					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-						<div id="s" onclick="spremeni('a4',this)"><span></span></div>
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+						<a href="./index.html">
+							<div class="s"><span>Prijava</span></div>
+						</a>
 					</div>
 				</div>
 			</nav>
+		</div>
+		<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 navi">
+			<p>Navigacija:</p>
+			<ul>
+				<li>Prva stopnja
+					<ul>
+						<li>Prvi letnik
+							<ul>
+								<li><a href="#">Osnove matematične analize</a></li>
+							</ul>
+						</li>
+						<li>Drugi letnik
+							<ul>
+								<li><a href="#">Verjetnost in statistika</a></li>
+							</ul>
+						</li>
+						<li>Treji letnik
+							<ul>
+								<li><a href="#">Spletno Programmiranje</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>Drga stopnja
+					<ul>
+						<li>Prvi letnik</li>
+						<li>Drugi letnik</li>
+					</ul>
+				</li>
+				<li>Tretja stopnja
+					<ul>
+						<li>Prvi letnik</li>
+						<li>Drugi letnik</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		
+		<div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 navi not">
+			<ul>
+				<li>Prva stopnja
+					<ul>
+						<li>Prvi letnik
+							<ul>
+								<li><a href="#">Osnove matematične analize</a></li>
+							</ul>
+						</li>
+						<li>Drugi letnik
+							<ul>
+								<li><a href="#">Verjetnost in statistika</a></li>
+							</ul>
+						</li>
+						<li>Treji letnik
+							<ul>
+								<li><a href="#">Spletno Programmiranje</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>Drga stopnja
+					<ul>
+						<li>Prvi letnik</li>
+						<li>Drugi letnik</li>
+					</ul>
+				</li>
+				<li>Tretja stopnja
+					<ul>
+						<li>Prvi letnik</li>
+						<li>Drugi letnik</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		
+		<div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 not">
+			<fieldset>
+				<legend>Prijava</legend>
+				<form method="GET" action="index.html">
+					<p>Uporabniško ime:</p><input type="text" name="uporabniško_ime" size="20" maxlength="50">
+					<br>
+					<br>
+					<p>Geslo:</p><input type="password" name="geslo">
+					<br>
+					<br>
+					<input type="submit" value="Poslji" />
+				</form>
+			</fieldset>
 		</div>
 	</body>
 </html>
