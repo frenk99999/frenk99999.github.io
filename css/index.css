@@ -1,0 +1,94 @@
+*{margin: 0px;
+	padding: 0px;
+}
+body {}
+
+header {
+	padding:10px;
+	border-bottom: 1px solid #000000;
+	background-color: #8888ff;
+}
+
+header h2 {
+	color: #ffffff;
+}
+
+header small {
+	color: #dddddd;
+}
+
+header h2 {
+	color: #ffffff;
+}
+
+header img{
+	position: absolute;
+	width: 80px;
+}
+
+.page-header{
+	margin: 0px;
+	border-bottom: 0px;
+	text-align: center;
+}
+
+.navbar{
+	border-top: 0px;
+	border-bottom: 0px;
+	
+}
+	
+#kon{padding:0px;
+	margin: 0px;
+}
+	
+#kon div{padding: 0px;
+	margin: 0px;
+	border-radius: 0px;
+	border-top: 0px;
+	border-bottom: 0px;}
+	
+	
+.bar {padding: 0px}
+#tek {padding: 10px}
+#s {border-style: solid;
+	border-width: 1px;
+	color: #ffffff;
+	background-color: #337ab7;
+	border-color: #2e6ada4;
+	border-radius: 5px;
+	height: 50px;
+	text-align: center;
+	display: table;
+	width: 100%;}
+#s span {display: table-cell;
+	vertical-align: middle;}
+#s :hover{background-color: #115895;
+	border-radius: 5px;
+	cursor: pointer;}
+#a1 {display: none;}
+#a2 {display: none;}
+#a3 {display: none;}
+#a4 {display: none;}
+.axis path,
+.axis line {
+	fill: none;
+	stroke: #000;
+	shape-rendering: crispEdges;
+}
+
+.x.axis path {
+	display: none;
+}
+
+.line {
+	fill: none;
+	stroke: steelblue;
+	stroke-width: 1.5px;
+}
+#grap {display: none;}
+#povprecje { background-color: #ff8800;
+	color: #ffffff;
+	border-radius: 5px;
+	border-style: solid;
+	padding-left: 10px;}

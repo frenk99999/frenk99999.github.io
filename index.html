@@ -1,7 +1,43 @@
 <!DOCTYPE html>
 <html>
+	<head>
+	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	    <title>E-učilnica</title>
+	    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+	    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+	    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+	    <script type="text/javascript" src="demo.js"></script>
+		<link href="css/index.css" rel="stylesheet">
+	</head>
 	<body>
-		<h1>Hello World</h1>
-		<p>I'm hosted with GitHub Pages.</p>
+		<header>
+			<div class="container-fluid">
+				<a href="https://www.fri.uni-lj.si/">
+					<img src="images/fri_logo.jpg" alt="Fakulteta za računalništvo in informatiko" align="top">
+				</a>
+				<a href="./test.html">test</a>
+				<div class="page-header">
+					<h2>E-učilnica<br><small>Fakulteta za rčunalništvo in informatiko</small></h2>
+				</div>
+			</div>
+		</header>
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 bar">
+			<nav class="navbar navbar-default">
+				<div class="container-fluid" id="kon">
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+						<div id="s" onclick="spremeni('a1',this)"><span></span></div>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+						<div id="s" onclick="spremeni('a2',this)"><span></span></div>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+						<div id="s" onclick="spremeni('a3',this)"><span></span></div>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+						<div id="s" onclick="spremeni('a4',this)"><span></span></div>
+					</div>
+				</div>
+			</nav>
+		</div>
 	</body>
 </html>
