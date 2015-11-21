@@ -1,0 +1,7 @@
+function addPredmetListeners(){
+	
+};
+
+$(function(){
+	addPredmetListeners();
+});

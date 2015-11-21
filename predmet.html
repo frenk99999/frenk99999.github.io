@@ -6,9 +6,11 @@
 	    <!--<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">-->
 		<link type="text/css" href="css/bootstrap.css" rel="stylesheet">
 		<link type="text/css" href="css/index.css" rel="stylesheet">
-	    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+		<script type="text/javascript" src="javascript/jquery-2.1.4.js"></script>
+	    <script type="text/javascript" src="javascript/bootstrap.js"></script>
 	    <script type="text/javascript" src="javascript/menu.js"></script>
+		<script type="text/javascript" src="javascript/status.js"></script>
+		<script type="text/javascript" src="javascript/predmet.js"></script>
 	</head>
 	<body>
 		<header>
@@ -34,7 +36,7 @@
 							<div class="s"><span>Predmeti</span></div>
 						</a>
 					</div>
-					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" id="odjava">
 						<a href="./prijava.html">
 							<div class="s"><span>Prijava</span></div>
 						</a>
@@ -45,38 +47,38 @@
 		<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 navi">
 			<p>Navigacija:</p>
 			<ul>
-				<li>Prva stopnja
+				<li><div>Prva stopnja</div>
 					<ul>
-						<li class="active">Prvi letnik
+						<li class="active"><div>Prvi letnik</div>
 							<ul>
-								<li class="active"><a href="predmet.html">Osnove matematične analize</a></li>
-								<li><a href="#">Diskretne Strukture</a></li>
+								<li class="active selected"><div><a href="predmet.html">Osnove matematične analize</a></div></li>
+								<li class="active"><div><a href="#">Diskretne Strukture</a></div></li>
 							</ul>
 						</li>
-						<li>Drugi letnik
+						<li class="active"><div>Drugi letnik</div>
 							<ul>
-								<li><a href="#">Verjetnost in statistika</a></li>
-								<li><a href="#">Osnove informacijskih sistemov</a></li>
+								<li><div><a href="#">Verjetnost in statistika</a></div></li>
+								<li><div><a href="#">Osnove informacijskih sistemov</a></div></li>
 							</ul>
 						</li>
-						<li>Treji letnik
+						<li class="active"><div>Treji letnik</div>
 							<ul>
-								<li><a href="#">Spletno Programmiranje</a></li>
-								<li><a href="#">Osnove umetne inteligence</a></li>
+								<li><div><a href="#">Spletno Programmiranje</a></div></li>
+								<li><div><a href="#">Osnove umetne inteligence</a></div></li>
 							</ul>
 						</li>
 					</ul>
 				</li>
-				<li>Drga stopnja
+				<li><div>Druga stopnja</div>
 					<ul>
-						<li>Prvi letnik</li>
-						<li>Drugi letnik</li>
+						<li><div>Prvi letnik</div></li>
+						<li><div>Drugi letnik</div></li>
 					</ul>
 				</li>
-				<li>Tretja stopnja
+				<li><div>Tretja stopnja</div>
 					<ul>
-						<li>Prvi letnik</li>
-						<li>Drugi letnik</li>
+						<li><div>Prvi letnik</div></li>
+						<li><div>Drugi letnik</div></li>
 					</ul>
 				</li>
 			</ul>
@@ -85,22 +87,107 @@
 			<div class="predmet">
 				<h2>Osnove matematične analize</h2>
 				<div class="vsebina">
-					<span><h3>Opis predmeta</h3></span>
+					<h3>Opis predmeta</h3>
 					<div>
-						<p>BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA</p>
+						<p>
+							BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA 
+							BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA 
+							BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA 
+							BLA BLA BLA BLA BLA BLA BLA BLA BLA 
+							BLA BLA BLA BLA BLA
+							<br>
+							BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA 
+							BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA
+							<br>
+							BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA 
+							BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA 
+							BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA 
+							BLA BLA BLA
+						</p>
+						<div class="but pro"><span>Spremeni</span></div>
 					</div>
 				</div>
 				<div class="vsebina">
 					<h3>Gradiva</h3>
 					<div>
+						<div>
+							<span>kratek opis</span><br>
+							<a href="#">Gradivo1</a>
+						</div>
+						<br>
+						<div>
+							<a href="#">Gradivo2</a>
+						</div>
+						<br>
+						<div>
+							<a href="#">Gradivo3</a>
+						</div>
 					</div>
 				</div>
 				<div class="vsebina">
 					<h3>Domače naloge</h3>
 					<div>
-						
+						<a href="#">Domača1</a>
+						<br>
+						<a href="#">Domača2</a>
+						<br>
+						<a href="#">Domača3</a>
 					</div>
 				</div>
+			</div>
+		</div>
+		<div id="dodajG" class="pro gone dodajOdstranni">
+			<div>
+				<div class="close">close</div>
+				<h3>Dodaj Gradivo</h3>
+				<form>
+					<p>Tip gradiva:</p>
+					<select class="col-lg-2 col-md-3 col-sm-4 col-xs-6 st">
+						<option value="1">Datoteka</option>
+						<option value="2">Povezava</option>
+					</select><br><br>
+					<div id="dodajanje">
+						
+					</div>
+					<p>Kratek opis:</p>
+					<input type="text" name="opis" size="40" maxlength="50" id="opis">
+					<div class="but right" id="dodajButG">Dodaj</div>
+				</form>
+			</div>
+		</div>
+		<div id="odstraniG" class="pro gone dodajOdstranni">
+			<div>
+				<div class="close">zapri</div>
+				<h3>Gradiva</h3>
+				<div id="list"></div>
+				<div class="but right" id="odstraniButG">odstrani</div>
+			</div>
+		</div>
+		<div id="SpremeniB" class="pro gone dodajOdstranni">
+			<div>
+				<div class="close">zapri</div>
+				<h3>Opis predmeta</h3>
+				<div id="opisB"></div>
+				<div class="but right" id="spremeniB">Spremeni</div>
+			</div>
+		</div>
+		<div id="dodajD" class="pro gone dodajOdstranni">
+			<div>
+				<div class="close">close</div>
+				<h3>Dodaj domačo</h3>
+				<form>
+					<p>Opis domače</p>
+					
+					<div class="but right" id="dodajButD">Dodaj</div>
+				</form>
+			</div>
+		</div>
+		<div id="odstraniD" class="pro gone dodajOdstranni">
+			<div>
+				<div class="close">close</div>
+				<h3>Odstrani domačo</h3>
+				<div id="list2"></div>
+				<div class="but right" id="odstraniButD">Odstrani</div>
 			</div>
 		</div>
 	</body>

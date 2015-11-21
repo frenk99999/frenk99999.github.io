@@ -6,9 +6,11 @@
 	    <!--<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">-->
 		<link type="text/css" href="css/bootstrap.css" rel="stylesheet">
 		<link type="text/css" href="css/index.css" rel="stylesheet">
-	    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+		<script type="text/javascript" src="javascript/jquery-2.1.4.js"></script>
+	    <script type="text/javascript" src="javascript/bootstrap.js"></script>
 	    <script type="text/javascript" src="javascript/menu.js"></script>
+		<script type="text/javascript" src="javascript/kontakti.js"></script>
+		<script type="text/javascript" src="javascript/status.js"></script>
 	</head>
 	<body>
 		<header>
@@ -45,54 +47,59 @@
 		<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 navi">
 			<p>Navigacija:</p>
 			<ul>
-				<li>Prva stopnja
+				<li><div>Prva stopnja</div>
 					<ul>
-						<li class="active">Prvi letnik
+						<li><div>Prvi letnik</div>
 							<ul>
-								<li class="active"><a href="predmet.html">Osnove matematične analize</a></li>
-								<li><a href="#">Diskretne Strukture</a></li>
+								<li><div><a href="predmet.html">Osnove matematične analize</a></div></li>
+								<li><div><a href="#">Diskretne Strukture</a></div></li>
 							</ul>
 						</li>
-						<li>Drugi letnik
+						<li><div>Drugi letnik</div>
 							<ul>
-								<li><a href="#">Verjetnost in statistika</a></li>
-								<li><a href="#">Osnove informacijskih sistemov</a></li>
+								<li><div><a href="#">Verjetnost in statistika</a></div></li>
+								<li><div><a href="#">Osnove informacijskih sistemov</a></div></li>
 							</ul>
 						</li>
-						<li>Treji letnik
+						<li><div>Treji letnik</div>
 							<ul>
-								<li><a href="#">Spletno Programmiranje</a></li>
-								<li><a href="#">Osnove umetne inteligence</a></li>
+								<li><div><a href="#">Spletno Programmiranje</a></div></li>
+								<li><div><a href="#">Osnove umetne inteligence</a></div></li>
 							</ul>
 						</li>
 					</ul>
 				</li>
-				<li>Drga stopnja
+				<li><div>Druga stopnja</div>
 					<ul>
-						<li>Prvi letnik</li>
-						<li>Drugi letnik</li>
+						<li><div>Prvi letnik</div></li>
+						<li><div>Drugi letnik</div></li>
 					</ul>
 				</li>
-				<li>Tretja stopnja
+				<li><div>Tretja stopnja</div>
 					<ul>
-						<li>Prvi letnik</li>
-						<li>Drugi letnik</li>
+						<li><div>Prvi letnik</div></li>
+						<li><div>Drugi letnik</div></li>
 					</ul>
 				</li>
 			</ul>
 		</div>
-		<div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+		<div class="col-lg-9 col-md-9 col-sm-9 col-xs-9" id="kontakt">
 			<div class="vsebina">
 				<div>
 					<h2>Fakulteta za rčunalništvo in informatiko</h2>
 					<img src="images/fri_logo.jpg" alt="Fakulteta za računalništvo in informatiko">
-					<p><b>Sedež:</b> Jadranska cesta 21a</p>
-					<p><b>Tel:</b> 73627237</p>
-					<p><b>Fax:</b> 73627237</p>
+					<p><b>Sedež: </b> Večna pot 113</p>
+					<p><b>Dekanat: </b>(01) 479 8100</p>
+					<p><b>Študenski referat: </b>(01) 479 8118</p>
+					<p><b>Knjižnica: </b>(01) 476 8215</p>
+					<p><b>Fax: </b>(01) 2419 350</p>
 					<p><b>Domača stran:</b> <a href="www.fri.uni-lj.si">www.fri.uni-js.si</a></p>
 				</div>
-				<div class="but"><span>prikaži lokacijo</span></div>
+				<div class="gone" id="mapa">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2769.0306592761353!2d14.472077389440905!3d46.05048670455207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477ad2ad3f7a8389%3A0x547f8800f76a47ff!2sFakulteta+za+ra%C4%8Dunalni%C5%A1tvo+in+informatiko%2C+Univerza+v+Ljubljani%2C+Fakulteta+za+ra%C4%8Dunalni%C5%A1tvo+in+informatiko%2C+Ve%C4%8Dna+pot+113%2C+1000+Ljubljana!5e0!3m2!1ssl!2ssi!4v1423736856492" class="map"></iframe>
+				</div>
 			</div>
+			<div class="but"><span>prikaži lokacijo</span></div>
 		</div>
 	</body>
 </html>

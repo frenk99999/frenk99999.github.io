@@ -6,14 +6,16 @@
 	    <!--<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">-->
 		<link type="text/css" href="css/bootstrap.css" rel="stylesheet">
 		<link type="text/css" href="css/index.css" rel="stylesheet">
-	    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+		<script type="text/javascript" src="javascript/jquery-2.1.4.js"></script>
+	    <script type="text/javascript" src="javascript/bootstrap.js"></script>
 	    <script type="text/javascript" src="javascript/menu.js"></script>
+		<script type="text/javascript" src="javascript/status.js"></script>
+		<script type="text/javascript" src="javascript/index.js"></script>
 	</head>
 	<body>
 		<header>
 			<div class="container-fluid">
-				<a href="https://www.fri.uni-lj.si/">
+				<a href="./kontakti.html">
 					<img src="images/fri_logo.jpg" alt="Fakulteta za računalništvo in informatiko">
 				</a>
 				<div class="page-header">
@@ -34,7 +36,7 @@
 							<div class="s"><span>Predmeti</span></div>
 						</a>
 					</div>
-					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" id="odjava">
 						<a href="./prijava.html">
 							<div class="s"><span>Prijava</span></div>
 						</a>
@@ -45,38 +47,50 @@
 		<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 navi">
 			<p>Navigacija:</p>
 			<ul>
-				<li>Prva stopnja
+				<li><div>Prva stopnja</div>
 					<ul>
-						<li>Prvi letnik
+						<li><div>Prvi letnik</div>
 							<ul>
-								<li><a href="predmet.html">Osnove matematične analize</a></li>
-								<li><a href="#">Diskretne Strukture</a></li>
+								<li><div><a href="predmet.html">Osnove matematične analize</a></div></li>
+								<li><div><a href="#">Diskretne Strukture</a></div></li>
 							</ul>
 						</li>
-						<li>Drugi letnik
+						<li><div>Drugi letnik</div>
 							<ul>
-								<li><a href="#">Verjetnost in statistika</a></li>
-								<li><a href="#">Osnove informacijskih sistemov</a></li>
+								<li><div><a href="#">Verjetnost in statistika</a></div></li>
+								<li><div><a href="#">Osnove informacijskih sistemov</a></div></li>
 							</ul>
 						</li>
-						<li>Treji letnik
+						<li><div>Treji letnik</div>
 							<ul>
-								<li><a href="#">Spletno Programmiranje</a></li>
-								<li><a href="#">Osnove umetne inteligence</a></li>
+								<li><div><a href="#">Spletno Programmiranje</a></div></li>
+								<li><div><a href="#">Osnove umetne inteligence</a></div></li>
 							</ul>
 						</li>
 					</ul>
 				</li>
-				<li>Drga stopnja
+				<li><div>Druga stopnja</div>
 					<ul>
-						<li>Prvi letnik</li>
-						<li>Drugi letnik</li>
+						<li><div>Prvi letnik</div>
+							<ul>
+							</ul>
+						</li>
+						<li><div>Drugi letnik</div>
+							<ul>
+							</ul>
+						</li>
 					</ul>
 				</li>
-				<li>Tretja stopnja
+				<li><div>Tretja stopnja</div>
 					<ul>
-						<li>Prvi letnik</li>
-						<li>Drugi letnik</li>
+						<li><div>Prvi letnik</div>
+							<ul>
+							</ul>
+						</li>
+						<li><div>Drugi letnik</div>
+							<ul>
+							</ul>
+						</li>
 					</ul>
 				</li>
 			</ul>
@@ -84,41 +98,90 @@
 		<div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
 			<div class="navi not">
 				<ul>
-					<li>Prva stopnja
+					<li><div>Prva stopnja</div>
 						<ul>
-							<li>Prvi letnik
+							<li><div>Prvi letnik</div>
 								<ul>
-									<li><a href="predmet.html">Osnove matematične analize</a></li>
-									<li><a href="#">Diskretne Strukture</a></li>
+									<li><div><a href="predmet.html">Osnove matematične analize</a></div></li>
+									<li><div><a href="#">Diskretne Strukture</a></div></li>
 								</ul>
 							</li>
-							<li>Drugi letnik
+							<li><div>Drugi letnik</div>
 								<ul>
-									<li><a href="#">Verjetnost in statistika</a></li>
-									<li><a href="#">Osnove informacijskih sistemov</a></li>
+									<li><div><a href="#">Verjetnost in statistika</a></div></li>
+									<li><div><a href="#">Osnove informacijskih sistemov</a></div></li>
 								</ul>
 							</li>
-							<li>Treji letnik
+							<li><div>Treji letnik</div>
 								<ul>
-									<li><a href="#">Spletno Programmiranje</a></li>
-									<li><a href="#">Osnove umetne inteligence</a></li>
+									<li><div><a href="#">Spletno Programmiranje</a></div></li>
+									<li><div><a href="#">Osnove umetne inteligence</a></div></li>
 								</ul>
 							</li>
 						</ul>
 					</li>
-					<li>Drga stopnja
+					<li><div>Druga stopnja</div>
 						<ul>
-							<li>Prvi letnik</li>
-							<li>Drugi letnik</li>
+							<li><div>Prvi letnik</div>
+								<ul>
+								</ul>
+							</li>
+							<li><div>Drugi letnik</div>
+								<ul>
+								</ul>
+							</li>
 						</ul>
 					</li>
-					<li>Tretja stopnja
+					<li><div>Tretja stopnja</div>
 						<ul>
-							<li>Prvi letnik</li>
-							<li>Drugi letnik</li>
+							<li><div>Prvi letnik</div>
+								<ul>
+								</ul>
+							</li>
+							<li><div>Drugi letnik</div>
+								<ul>
+								</ul>
+							</li>
 						</ul>
 					</li>
 				</ul>
+				<div class="but adm" id="dodPredmet">
+					<span>Dodaj</span>
+				</div>
+				<div class="but adm" id="odsPredmet">
+					<span>Odstrani</span>
+				</div>
+			</div>
+		</div>
+		<div id="dodaj" class="adm gone dodajOdstranni">
+			<div>
+				<div class="close">close</div>
+				<h3>Dodaj predmet</h3>
+				<form>
+					<p>Stopnja:</p>
+					<select class="col-lg-2 col-md-3 col-sm-4 col-xs-6 st">
+						<option value="1">Prva</option>
+						<option value="2">Druga</option>
+						<option value="3">Tretja</option>
+					</select><br><br>
+					<p>Letnik:</p>
+					<select class="col-lg-2 col-md-3 col-sm-4 col-xs-6 lt">
+						<option value="1">Prvi</option>
+						<option value="2">Drugi</option>
+						<option value="3">Tretji</option>
+					</select><br><div id="warning2"></div><br>
+					<p>Ime predmeta:</p>
+					<input type="text" name="ime_predmeta" size="40" maxlength="50" id="imePre"><div id="warning"></div>
+					<div class="but right" id="dodajBut">Dodaj</div>
+				</form>
+			</div>
+		</div>
+		<div id="odstrani" class="adm gone dodajOdstranni">
+			<div>
+				<div class="close">zapri</div>
+				<h3>Predmeti</h3>
+				<div id="list"></div>
+				<div class="but right" id="odstraniBut">odstrani</div>
 			</div>
 		</div>
 	</body>
