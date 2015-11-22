@@ -88,7 +88,7 @@
 				<h2>Osnove matematične analize</h2>
 				<div class="vsebina">
 					<h3>Opis predmeta</h3>
-					<div>
+					<div id="opisPB">
 						<p>
 							BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA 
 							BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA 
@@ -104,35 +104,38 @@
 							BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA 
 							BLA BLA BLA
 						</p>
-						<div class="but pro"><span>Spremeni</span></div>
 					</div>
+					<div class="but pro" id="SB"><span>spremeni</span></div>
 				</div>
 				<div class="vsebina">
 					<h3>Gradiva</h3>
-					<div>
+					<div id="G">
 						<div>
 							<span>kratek opis</span><br>
 							<a href="#">Gradivo1</a>
 						</div>
-						<br>
 						<div>
 							<a href="#">Gradivo2</a>
 						</div>
-						<br>
 						<div>
 							<a href="#">Gradivo3</a>
 						</div>
 					</div>
+					<div class="but pro" id="DG"><span>dodaj</span></div>
+					<div class="but pro" id="OG"><span>odstrani</span></div>
 				</div>
 				<div class="vsebina">
 					<h3>Domače naloge</h3>
-					<div>
-						<a href="#">Domača1</a>
-						<br>
-						<a href="#">Domača2</a>
-						<br>
-						<a href="#">Domača3</a>
+					<div id="D">
+						<div class="but domaca">Domača1</div>
+						<div class="but domaca">Domača2</div>
+						<div class="but domaca">Domača3</div>
 					</div>
+					<br>
+					<div class="but pro" id="DD"><span>dodaj</span></div>
+					<div class="but pro" id="OD"><span>odstrani</span></div>
+					<div class="but pro" id="oceni"><span>oceni</span></div>
+					<div class="but stu" id="ocene"><span>ocene</span></div>
 				</div>
 			</div>
 		</div>
@@ -142,16 +145,17 @@
 				<h3>Dodaj Gradivo</h3>
 				<form>
 					<p>Tip gradiva:</p>
-					<select class="col-lg-2 col-md-3 col-sm-4 col-xs-6 st">
+					<select class="col-lg-2 col-md-3 col-sm-4 col-xs-6 nacin2">
 						<option value="1">Datoteka</option>
 						<option value="2">Povezava</option>
 					</select><br><br>
 					<div id="dodajanje">
 						
 					</div>
+					<div id="warning"></div>
 					<p>Kratek opis:</p>
 					<input type="text" name="opis" size="40" maxlength="50" id="opis">
-					<div class="but right" id="dodajButG">Dodaj</div>
+					<div class="but right" id="dodajButG">dodaj</div>
 				</form>
 			</div>
 		</div>
@@ -163,22 +167,29 @@
 				<div class="but right" id="odstraniButG">odstrani</div>
 			</div>
 		</div>
-		<div id="SpremeniB" class="pro gone dodajOdstranni">
+		<div id="spremeniB" class="pro gone dodajOdstranni">
 			<div>
 				<div class="close">zapri</div>
 				<h3>Opis predmeta</h3>
-				<div id="opisB"></div>
-				<div class="but right" id="spremeniB">Spremeni</div>
+					<select class="col-lg-2 col-md-3 col-sm-4 col-xs-6 nacin">
+						<option value="1">Text</option>
+						<option value="2">HTML</option>
+					</select><br><br>
+				<div id="opisB">
+					<textarea rows="20">
+					</textarea>
+				</div>
+				<div class="but right" id="spremeniButB">spremeni</div>
 			</div>
 		</div>
-		<div id="dodajD" class="pro gone dodajOdstranni">
+		<div id="oddajDo" class="stu gone dodajOdstranni">
 			<div>
 				<div class="close">close</div>
-				<h3>Dodaj domačo</h3>
+				<h3>Oddaj domačo</h3>
 				<form>
-					<p>Opis domače</p>
-					
-					<div class="but right" id="dodajButD">Dodaj</div>
+					<p><b>Status: </b>neoddano</p>
+					<input type="file">
+					<div class="but right" id="oddajD">končano</div>
 				</form>
 			</div>
 		</div>
@@ -187,7 +198,28 @@
 				<div class="close">close</div>
 				<h3>Odstrani domačo</h3>
 				<div id="list2"></div>
-				<div class="but right" id="odstraniButD">Odstrani</div>
+				<div class="but right" id="odstraniButD">odstrani</div>
+			</div>
+		</div>
+		<div id="oceneO" class="stu gone dodajOdstranni">
+			<div>
+				<div class="close">close</div>
+				<h3>Ocene</h3>
+				<div id="list3"></div>
+			</div>
+		</div>
+		<div id="oceniO" class="pro gone dodajOdstranni">
+			<div>
+				<div class="close">close</div>
+				<h3>Ocene</h3>
+				<p>Domača naloga:</p>
+				<select class="col-lg-2 col-md-3 col-sm-4 col-xs-6 dom">
+					<option value="0">Domača1</option>
+					<option value="1">Domača2</option>
+					<option value="2">Domača3</option>
+				</select><br><br>
+				<div id="list4"></div>
+				<div class="but right" id="potrdi">potrdi</div>
 			</div>
 		</div>
 	</body>

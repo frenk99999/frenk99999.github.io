@@ -1,7 +1,7 @@
 var guest = {status: "guest"};
 var student = {status: "student"};
-var profesor = {status:"profesor", subjects: "Osnove matematične analize"}
-var admin = {status: "administrator"}
+var profesor = {status:"profesor"};
+var admin = {status: "administrator"};
 var stat = profesor;
 
 //spreminjanje napisa
@@ -17,7 +17,7 @@ function izbrisiStuEle( exept ){
 		var atri = $(this).attr("class");
 		var ind = atri.indexOf(exept);
 		if(ind == -1){
-			$(this.remove());
+			$(this).remove();
 		}
 	});
 }
@@ -27,7 +27,7 @@ function izbrisiProEle( exept ){
 		var atri = $(this).attr("class");
 		var ind = atri.indexOf(exept);
 		if(ind == -1){
-			$(this.remove());
+			$(this).remove();
 		}
 	});
 }
@@ -37,7 +37,7 @@ function izbrisiAdmEle( exept ){
 		var atri = $(this).attr("class");
 		var ind = atri.indexOf(exept);
 		if(ind == -1){
-			$(this.remove());
+			$(this).remove();
 		}
 	});
 }
@@ -47,7 +47,7 @@ function izbrisiGueEle( exept ){
 		var atri = $(this).attr("class");
 		var ind = atri.indexOf(exept);
 		if(ind == -1){
-			$(this.remove());
+			$(this).remove();
 		}
 	});
 }
