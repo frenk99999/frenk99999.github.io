@@ -103,6 +103,7 @@ header img{
 	background-color: #eeeeee;
 	display: block;
 	list-style-type:none;
+	cursor:pointer;
 }
 
 .navi > p{
@@ -125,6 +126,7 @@ header img{
 
 .navi li li li  a{
 	display:block;
+	cursor:pointer;
 }
 
 .nav div{
