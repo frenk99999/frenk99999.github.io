@@ -12,6 +12,68 @@ var podatkiOcen = [["63130075" , 10, 9, 8],
 ];
 
 var edit;
+var data;
+
+function narisiPito(){
+	$("#pie").html("");
+	console.log(data)
+	var width = 200,
+		height = 200,
+		radius = Math.min(width, height) / 2;
+
+	var color = d3.scale.ordinal()
+		.range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00","#df7c30","#7a6540","#3a7745","#009999"]);
+
+	var arc = d3.svg.arc()
+		.outerRadius(radius - 10)
+		.innerRadius(0);
+
+	var pie = d3.layout.pie()
+		.sort(null)
+		.value(function(d) { return d.population; });
+
+	var svg = d3.select("#pie").append("svg")
+		.attr("width", width)
+		.attr("height", height)
+	.append("g")
+		.attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+	//console.log("yay")
+		//console.log(data);
+	data.forEach(function(d) {
+		d.population = +d.population;
+	});
+
+	var g = svg.selectAll(".arc")
+		.data(pie(data))
+		.enter().append("g")
+		.attr("class", "arc");
+
+	g.append("path")
+		.attr("d", arc)
+		.style("fill", function(d) { return color(d.data.age); });
+
+	g.append("text")
+		.attr("transform", function(d) { return "translate(" + arc.centroid(d) + ")"; })
+		.attr("dy", ".35em")
+		.style("text-anchor", "middle")
+		.text(function(d) { return d.data.age; });
+
+	
+}
+
+//podatki za graf pite
+function makeData(a){
+	data = [];
+	var delay = 0;
+	for(var i=0;i<11;i++){
+		if(a[i] == 0){
+			delay = delay + 1;
+		}
+		else{
+			data[i-delay]={"age": i,"population": a[i]}
+		}
+	}
+}
 
 //kopira besedilo v prostor za spreminjanje
 function odpriB(){
@@ -198,9 +260,22 @@ function urediOceno(){
 		var pov = 0;
 		edit.html(tmp);
 		edit.click(urediOceno);
+		//
+		var datatomake=[];
+		for(var i=0;i<11;i++){
+			datatomake[i]=0;
+		}
+		//
 		$("#list4 .edit").each(function(){
 			pov = pov + parseInt($(this).text());
+			//
+			datatomake[parseInt($(this).text())] = datatomake[parseInt($(this).text())] + 1;
+			//
 		});
+		//
+		makeData(datatomake);
+		narisiPito();
+		//
 		$(".pov").text(pov/podatkiOcen.length);
 	}
 	edit=$(this);
@@ -218,10 +293,24 @@ function dajOcene(){
 	var stringHtml2 = "<table class=\"table table-striped table-hover\"><thead><tr><td><b>Vpisna st.</b></td><td><b>Ocene</b></td></tr></thead><tbody>";
 	var skupno = 0;
 	
+	//
+	var datatomake=[];
+	for(var i=0;i<11;i++){
+		datatomake[i]=0;
+	}
+	//
+	
 	for(var i=0;i<podatkiOcen.length;i++){
 		stringHtml2 = stringHtml2 + "<tr><td>"+podatkiOcen[i][0]+"</td><td class=\"edit\">"+podatkiOcen[i][indexD+1]+"</td></tr>";
 		skupno = skupno + podatkiOcen[i][indexD+1];
+		//
+		datatomake[podatkiOcen[i][indexD+1]] = datatomake[podatkiOcen[i][indexD+1]] + 1;
+		//
 	}
+	//
+	makeData(datatomake);
+	narisiPito();
+	//
 	stringHtml2 = stringHtml2 + "</tbody><tfoot><tr><td><b>Povprečje</b></td><td class=\"pov\">"+skupno/podatkiOcen.length+"</td></tr></tfoot></table>"
 	$("#list4").html(stringHtml2);
 	$("#list4 .edit").click(urediOceno);

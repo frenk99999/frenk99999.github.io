@@ -10,6 +10,7 @@
 	    <script type="text/javascript" src="javascript/bootstrap.js"></script>
 	    <script type="text/javascript" src="javascript/menu.js"></script>
 		<script type="text/javascript" src="javascript/status.js"></script>
+		<script type="text/javascript" src="javascript/d3.js" charset="utf-8"></script>
 		<script type="text/javascript" src="javascript/predmet.js"></script>
 	</head>
 	<body>
@@ -121,8 +122,11 @@
 							<a href="#">Gradivo3</a>
 						</div>
 					</div>
-					<div class="but pro" id="DG"><span>dodaj</span></div>
-					<div class="but pro" id="OG"><span>odstrani</span></div>
+					<div>
+						<div class="but pro left" id="DG"><span>dodaj</span></div>
+						<div class="but pro left" id="OG"><span>odstrani</span></div>
+						<div class="fix"></div>
+					</div>
 				</div>
 				<div class="vsebina">
 					<h3>Domače naloge</h3>
@@ -132,10 +136,13 @@
 						<div class="but domaca">Domača3</div>
 					</div>
 					<br>
-					<div class="but pro" id="DD"><span>dodaj</span></div>
-					<div class="but pro" id="OD"><span>odstrani</span></div>
-					<div class="but pro" id="oceni"><span>oceni</span></div>
-					<div class="but stu" id="ocene"><span>ocene</span></div>
+					<div>
+						<div class="but pro left" id="DD"><span>dodaj</span></div>
+						<div class="but pro left" id="OD"><span>odstrani</span></div>
+						<div class="but pro left" id="oceni"><span>oceni</span></div>
+						<div class="but stu left" id="ocene"><span>ocene</span></div>
+						<div class="fix"></div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -219,6 +226,7 @@
 					<option value="2">Domača3</option>
 				</select><br><br>
 				<div id="list4"></div>
+				<div id="pie"></div>
 				<div class="but right" id="potrdi">potrdi</div>
 			</div>
 		</div>

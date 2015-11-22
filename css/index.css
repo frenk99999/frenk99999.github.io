@@ -186,6 +186,11 @@ header img{
 	cursor:pointer;
 	width:70px;
 }
+
+.but:hover{
+	background-color: #133a57;
+}
+
 .map{
 	border:0px;
 	width:100%;
@@ -198,6 +203,7 @@ header img{
 
 .dodajOdstranni{
 	position:fixed;
+	overflow-y: auto;
 	top:0px;
 	left:0px;
 	width:100%;
@@ -218,6 +224,10 @@ header img{
 	border-radius:5px;
 	background-color:#efefef;
 	border:1px solid #000000;
+}
+
+.dodajOdstranni h3{
+	border-bottom:1px solid #000000;
 }
 
 #list li{
@@ -248,4 +258,8 @@ header img{
 
 .left{
 	float:left;
+}
+
+.fix{
+	clear: both;
 }
